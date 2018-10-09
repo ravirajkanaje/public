@@ -12,7 +12,7 @@ public class HelloWorldRest {
     @Path("/{param}")
     public Response getMsg(@PathParam("param") String msg) {
  
-        String output = "Jersey say : " + msg;
+        String output = "Jersey has to say : " + msg;
  
         return Response.status(200).entity(output).build();
  
